@@ -1,4 +1,4 @@
-# HR Analytics Dashboard
+# Financial Health Dashboard Dashboard
 
 An interactive Power BI dashboard designed to analyze and optimize HR processes and workforce management. The dashboard provides actionable insights into recruitment performance, employee turnover, employee satisfaction, workforce performance, and future hiring needs through predictive analytics.
 
