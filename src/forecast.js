@@ -113,7 +113,7 @@ function loadForecastChart() {
             tooltip: {
               callbacks: {
                 label: function(ctx) {
-                  return ctx.dataset.label + ': $' + ctx.parsed.y.toLocaleString();
+                  return ctx.dataset.label + ': R' + ctx.parsed.y.toLocaleString();
                 }
               }
             }
@@ -122,7 +122,7 @@ function loadForecastChart() {
             y: {
               ticks: {
                 callback: function(value) {
-                  return '$' + value.toLocaleString();
+                  return 'R' + value.toLocaleString();
                 }
               }
             }
@@ -136,9 +136,9 @@ function loadForecastChart() {
 }
 
 function updateForecastKPIs(revenue, expenses, net) {
-  document.getElementById('forecastRevenue').textContent  = '$' + revenue.reduce((a, b) => a + b, 0).toLocaleString();
-  document.getElementById('forecastExpenses').textContent = '$' + expenses.reduce((a, b) => a + b, 0).toLocaleString();
-  document.getElementById('forecastNet').textContent      = '$' + net.reduce((a, b) => a + b, 0).toLocaleString();
+  document.getElementById('forecastRevenue').textContent  = 'R' + revenue.reduce((a, b) => a + b, 0).toLocaleString();
+  document.getElementById('forecastExpenses').textContent = 'R' + expenses.reduce((a, b) => a + b, 0).toLocaleString();
+  document.getElementById('forecastNet').textContent      = 'R' + net.reduce((a, b) => a + b, 0).toLocaleString();
 }
 
 document.addEventListener('DOMContentLoaded', function() {

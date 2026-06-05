@@ -11,7 +11,7 @@ function filterRows(rows, period) {
 }
 
 function formatCurrency(value) {
-  return '$' + Number(value).toLocaleString();
+  return 'R' + Number(value).toLocaleString();
 }
 
 function updateKPIs(rows) {
