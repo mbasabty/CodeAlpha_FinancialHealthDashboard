@@ -4,37 +4,17 @@
   <meta charset="UTF-8">
   <title>Financial Dashboard</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
-
+  <h1>MBASA BATYI TRADERS</h1>
   <h2>Revenue vs Expenses</h2>
 
   <div style="width: 800px; height: 400px; position: relative;">
     <canvas id="revenueChart"></canvas>
   </div>
 
-  <script>
-    const ctx = document.getElementById('revenueChart');
-
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-        datasets: [
-          {
-            label: 'Revenue',
-            data: [50000, 62000, 58000, 71000, 80000, 75000],
-            borderColor: '#3266ad',
-          },
-          {
-            label: 'Expenses',
-            data: [40000, 45000, 50000, 48000, 55000, 60000],
-            borderColor: '#e24b4a',
-          }
-        ]
-      }
-    });
-  </script>
+  <script src="charts.js"></script>
 
 </body>
 </html>
