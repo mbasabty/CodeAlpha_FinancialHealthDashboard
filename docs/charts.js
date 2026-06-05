@@ -27,7 +27,7 @@ function updateKPIs(rows) {
 let revenueChart, balanceChart, cashFlowChart;
 
 function loadIncomeChart(period = 'all') {
-  Papa.parse('../data/income_statement.csv', {
+  Papa.parse('docs/data/income_statement.csv', {
     download: true,
     header: true,
     complete: function(results) {
@@ -55,7 +55,7 @@ function loadIncomeChart(period = 'all') {
 }
 
 function loadBalanceChart(period = 'all') {
-  Papa.parse('../data/balance_sheet.csv', {
+  Papa.parse('docs/data/balance_sheet.csv', {
     download: true,
     header: true,
     complete: function(results) {
@@ -84,7 +84,7 @@ function loadBalanceChart(period = 'all') {
 }
 
 function loadCashFlowChart(period = 'all') {
-  Papa.parse('../data/cash_flow.csv', {
+  Papa.parse('docs/data/cash_flow.csv', {
     download: true,
     header: true,
     complete: function(results) {

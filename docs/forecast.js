@@ -22,7 +22,7 @@ function generateForecast(values, monthsAhead = 3) {
 }
 
 function loadForecastChart() {
-  Papa.parse('../data/income_statement.csv', {
+  Papa.parse('docs/data/income_statement.csv', {
     download: true,
     header: true,
     complete: function(results) {
