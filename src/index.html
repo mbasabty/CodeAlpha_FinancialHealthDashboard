@@ -7,14 +7,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 </head>
 <body>
-  <h1>MBASA BATYI TRADERS</h1>
-  <h2>Revenue vs Expenses</h2>
 
+  <h2>Revenue vs Expenses</h2>
   <div style="width: 800px; height: 400px; position: relative;">
     <canvas id="revenueChart"></canvas>
   </div>
 
-  <script src="charts.js"></script>
+  <h2>Balance Sheet</h2>
+  <div style="width: 800px; height: 400px; position: relative;">
+    <canvas id="balanceChart"></canvas>
+  </div>
 
+  <h2>Cash Flow</h2>
+  <div style="width: 800px; height: 400px; position: relative;">
+    <canvas id="cashFlowChart"></canvas>
+  </div>
+
+  <script src="income_statement.js"></script>
+  <script src="balance_sheet.js"></script>
+  <script src="cash_flow.js"></script>
 </body>
 </html>
