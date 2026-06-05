@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Health Dashboard</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="dashboard-header">
+    <h1>Financial Health Dashboard</h1>
+    <span>SME Financial Overview — 2024</span>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <label for="periodFilter">Filter by Period:</label>
+    <select id="periodFilter">
+      <option value="all">All Months</option>
+      <option value="Q1">Q1 (Jan–Mar)</option>
+      <option value="Q2">Q2 (Apr–Jun)</option>
+    </select>
+  </div>
+
+  <!-- KPI Cards -->
+  <p class="section-title">Key Performance Indicators</p>
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Revenue</div>
+      <div class="kpi-value positive" id="kpiRevenue">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Total Expenses</div>
+      <div class="kpi-value negative" id="kpiExpenses">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Net Income</div>
+      <div class="kpi-value positive" id="kpiNetIncome">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg Assets</div>
+      <div class="kpi-value neutral" id="kpiAssets">—</div>
+    </div>
+  </div>
+
+  <!-- Income Statement -->
+  <p class="section-title">Income Statement</p>
+  <div class="chart-wrapper">
+    <h2>Revenue vs Expenses</h2>
+    <p class="chart-subtitle">Monthly comparison of revenue and expenses</p>
+    <div class="chart-container">
+      <canvas id="revenueChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Balance Sheet -->
+  <p class="section-title">Balance Sheet</p>
+  <div class="chart-wrapper">
+    <h2>Assets, Liabilities & Equity</h2>
+    <p class="chart-subtitle">Monthly breakdown of financial position</p>
+    <div class="chart-container">
+      <canvas id="balanceChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Cash Flow -->
+  <p class="section-title">Cash Flow</p>
+  <div class="chart-wrapper">
+    <h2>Operating, Investing & Financing</h2>
+    <p class="chart-subtitle">Monthly cash flow by activity type</p>
+    <div class="chart-container">
+      <canvas id="cashFlowChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Forecast -->
+  <p class="section-title">Forecast — Next 3 Months (Jul–Sep)</p>
+  <div class="kpi-grid" style="margin-bottom: 24px;">
+    <div class="kpi-card">
+      <div class="kpi-label">Forecasted Revenue</div>
+      <div class="kpi-value positive" id="forecastRevenue">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Forecasted Expenses</div>
+      <div class="kpi-value negative" id="forecastExpenses">—</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Forecasted Net Income</div>
+      <div class="kpi-value positive" id="forecastNet">—</div>
+    </div>
+  </div>
+
+  <div class="chart-wrapper">
+    <h2>Revenue, Expenses & Net Income Forecast</h2>
+    <p class="chart-subtitle">Solid lines = actual &nbsp;|&nbsp; Dashed lines = forecast</p>
+    <div class="chart-container">
+      <canvas id="forecastChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="dashboard-footer">
+    Financial Health Dashboard &copy; 2024 — Built with Chart.js & PapaParse
+  </div>
+
+  <script src="charts.js"></script>
+  <script src="forecast.js"></script>
+
+</body>
+</html>
