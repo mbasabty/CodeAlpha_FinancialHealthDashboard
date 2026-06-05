@@ -23,30 +23,9 @@ Create a dashboard to analyze and optimize HR processes and workforce management
 ## Key Features
 
 ### Recruitment Analytics
-- Track hiring trends and recruitment performance.
-- Monitor candidate pipelines and hiring efficiency.
-- Analyze recruitment source effectiveness.
-- Measure time-to-hire and hiring success rates.
-
 ### Employee Turnover Analysis
-- Monitor employee attrition rates.
-- Identify turnover trends across departments.
-- Analyze retention and workforce stability.
-- Detect patterns contributing to employee exits.
-
 ### Employee Satisfaction & Performance
-- Evaluate employee satisfaction scores.
-- Monitor workforce engagement levels.
-- Compare performance metrics across teams and departments.
-- Identify top-performing employees and areas for improvement.
-
 ### Predictive Workforce Analytics
-- Forecast future hiring requirements.
-- Anticipate workforce growth trends.
-- Support strategic workforce planning.
-- Enable proactive HR decision-making.
-
----
 
 ## Dashboard Pages
 
@@ -142,16 +121,6 @@ This dashboard enables HR teams to:
 
 ## Dashboard Preview
 
-Add screenshots of your dashboard in the repository:
-
-```text
-images/
-├── Overview.png
-├── Recruitment.png
-├── Workforce.png
-├── Performance.png
-└── Forecasting.png
-```
 <img width="1440" height="900" alt="Screenshot 2026-06-05 at 17 08 49" src="https://github.com/user-attachments/assets/41f3c897-55aa-4a80-ac6d-cc33bf7227f6" />
 <img width="1440" height="900" alt="Screenshot 2026-06-05 at 17 08 57" src="https://github.com/user-attachments/assets/8f77f302-2d03-4a15-8627-7098b8bd6fe6" />
 <img width="1440" height="900" alt="Screenshot 2026-06-05 at 17 09 07" src="https://github.com/user-attachments/assets/7452acf9-f3a5-469d-921a-21142957dc92" />
@@ -185,6 +154,6 @@ images/
 
 ---
 
-## 📄 License
+##  License
 
 This project was developed for educational and portfolio purposes. Feel free to explore, learn from, and customize the project.
